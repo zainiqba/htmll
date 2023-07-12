@@ -5,11 +5,14 @@
     font-family: Arial, Helvetica, sans-serif;
     
     }
-    body{
-        display:inline;
-        justify-content:center;
-       background:url('zain.jpg') no-repeat ;
-         background-size: 100%;
+        body{
+
+            background-image: url('zain.jpg') ;
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
         
         
         
@@ -151,15 +154,11 @@
        display:none;
     }
 
-    #check:checked ~ .navigation a{
-
-        transform: translatex(1);
-        
-    }
-    @media(max-width:895px){  
     
+    @media (max-width:895px){
        
-        #checkbtn{
+       
+     #checkbtn{
             display: block;
             float: none;
             margin: 10px;
@@ -169,67 +168,16 @@
             transform: translate(-50%,-50%);
            
         }
-       
-        .navigation  {
-            position: absolute;
-            font-size: 1rem;;
-            top: 60px;
-            left: 0px;
-            width: 100%;
-        text-align: center;
-        padding: 10px;
-        color: rgb(14, 9, 9);
-        background-color: blue;
-        transition: left 0.3 ease-in-out;
-
-        }
-        
-        #check:checked ~ .navigation{
-            left: 0;
-        }
-        .navigation a{
-            display:inline-block;
-            text-align:center;
-            font-size: 1.5em;
-            display: inline-block;
-            transform: translatey(300%);
-
-        }
-.btnlogin-popup{
-
-    margin-left: 10px;
-    position: absolute;
-    display: inline-block;
     
-    margin-top: 15px;
-    right:15px;
-    margin-right: 60px;
-    /* padding-top: 0%; */
-}
-
-.navigation{
-   
-    width: 100%;
-    height: 100vh;
-    background-color: blueviolet;
-    position: fixed;
-    top: 70px;
-    width: 100%;
-    height: 100vh;
-    transition: left (0.3) ease-in-out;
-    left: -100%;
-}
-.navigation a{
-
-    display: block;
-    text-align: center;
-
-    font-weight:bolder;
-    text-transform: capitalize;
-    text-shadow:gray;
-    text-decoration-thickness:calc(2rem);
-    word-spacing: var(-50%);
-}
+        {
+            background-size: cover;
+            background-attachment: scroll;
+            width: 200px;
+            height: 100vh;
+           }
+           
+      
+        
 
 
     
